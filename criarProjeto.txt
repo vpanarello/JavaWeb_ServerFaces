@@ -1,0 +1,11 @@
+Criando projeto JSF
+
+Apache Tomcat v8.0
+
+dynamic web module version 3.0
+JSF v2.2
+
+JSF Capabilities
+Add URL Mapping PAttern
+Elimina> /faces/*
+*.faces
