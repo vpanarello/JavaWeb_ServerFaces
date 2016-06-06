@@ -3,7 +3,7 @@ xmlns:ui="http://java.sun.com/jsf/facelets"
 xmlns:h="http://java.sun.com/jsf/html"
 xmlns:f="http://java.sun.com/jsf/core">
 <h:head>
-<title>Insert title here</title>
+<title>Listar Livros</title>
 <h:outputStylesheet library="css" name="estilos.css"></h:outputStylesheet>
 </h:head>
 <h:body>
@@ -46,9 +46,7 @@ xmlns:f="http://java.sun.com/jsf/core">
  <f:facet name="header">
  IMAGEM
  </f:facet>
- <h:graphicImage
- value="imagem?id=#{livro.codigo}"
- width="150" />
+ <h:graphicImage  value="imagem?id=#{livro.codigo}" width="150" />
  </h:column>
  </h:dataTable>
 </h:form>

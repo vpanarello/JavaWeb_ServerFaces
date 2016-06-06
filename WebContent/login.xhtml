@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+
+
+<h:head>
+	<title>Login</title>
+</h:head>
+<h:body  bgcolor="#DBEFF0">
+<f:view>
+<h:form>
+<h:panelGrid columns="2" border="1">
+
+
+<h:form enctype="multipart/form-data">
+ <h:outputText value="Nome:" /><br/>
+ <h:inputText value="#{loginBean.nome}" /><br/>
+ <h:outputText value="Senha:" /><br/>
+ <h:inputText value="#{loginBean.senha}" /><br/>
+ <h:commandButton value="Entra" action="#{loginBean.autenticaUsuario()}" />
+</h:form>
+	
+</h:panelGrid>
+</h:form>
+</f:view>
+</h:body>
+</html>

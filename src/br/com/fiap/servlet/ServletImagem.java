@@ -25,7 +25,7 @@ public class ServletImagem extends HttpServlet {
 		
 		int id = Integer.parseInt(request.getParameter("id"));
 		GenericDao<Livro> dao = new GenericDao<Livro>(Livro.class);
-		byte[] imagem = dao.buscar(id).getImage();
+		byte[] imagem = dao.buscar(id).getImagem();
 		response.setContentType("image/jpeg");
 		ServletOutputStream os = response.getOutputStream();
 		os.write(imagem);
